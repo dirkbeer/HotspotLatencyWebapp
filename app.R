@@ -14,7 +14,7 @@ source("plotHotspotLatencies.R")
 ui <- fluidPage(
 
     # Application title
-    titlePanel("Hotspot Latency"),
+    titlePanel("Hotspot P2P Response Latency"),
 
     # Sidebar with a slider input for number of bins 
     sidebarLayout(position = "right",
