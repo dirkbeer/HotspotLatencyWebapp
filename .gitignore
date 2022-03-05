@@ -3,3 +3,5 @@
 .RData
 .Ruserdata
 mysecrets.R
+hotspot_latency.txt
+rsconnect/
