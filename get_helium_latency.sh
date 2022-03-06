@@ -28,4 +28,5 @@ hs=(spider 72.26.117.34 44158)
 get_hotspot_data "${hs[@]}"
 
 # keep file size reasonable by only keeping a maximum number of lines
-echo "$(tail -1008 $outfilename)" > $outfilename
+#     e.g. 3 days * 24 hours/day * 60 minutes/hour * 1 sample / 10 minutes * 4 lines/sample = 1728
+echo "$(tail -1728 $outfilename)" > $outfilename
