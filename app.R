@@ -21,6 +21,7 @@ ui <- fluidPage(
         sidebarPanel(width=0),
         mainPanel(
            plotOutput("latencyPlot"),
+           plotOutput("latencyPlot_hist"),
            width=12
         )
     )
@@ -30,9 +31,11 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$latencyPlot <- renderPlot({
-
         plotHotspotLatencies()
-        
+    })
+
+    output$latencyPlot_hist <- renderPlot({
+        plotHotspotLatencies_hist()
     })
 }
 
