@@ -15,16 +15,16 @@ function get_hotspot_data () {
         printf "$datetime\t${hs[0]}\t${hs[1]}\t$result\n" >> $outfilename
 }
 
-hs=(tadpole 68.8.112.183 44158)
+hs=(tadpole 68.128.112.183 44158)
 get_hotspot_data "${hs[@]}"
 
-hs=(buffalo 99.171.178.180 44158)
+hs=(buffalo 99.171.128.180 44158)
 get_hotspot_data "${hs[@]}"
 
-hs=(beaver 72.26.117.34 44158)
+hs=(beaver 128.26.117.34 44158)
 get_hotspot_data "${hs[@]}"
 
-hs=(spider 72.26.117.34 44158)
+hs=(spider 72.26.117.128 44158)
 get_hotspot_data "${hs[@]}"
 
 # keep file size reasonable by only keeping a maximum number of lines
